@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EA FC 25</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #12172E;
+            color: white;
+            text-align: center;
+        }
+        .top-bar {
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 15px;
+        }
+        .top-bar a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .top-bar a:hover {
+            background-color: lightgray;
+        }
+        .top-bar .sign-in {
+            background-color: gray;
+            color: black;
+        }
+        .top-bar .register {
+            background-color: black;
+            color: white;
+        }
+        .header {
+            background-color: #1A1F3D;
+            padding: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 81px;
+        }
+        .header p {
+            font-style: italic;
+        }
+        .header .buttons {
+            margin-top: 10px;
+        }
+        .header .buttons button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .header .rent {
+            background-color: white;
+            color: black;
+        }
+        .header .buy {
+            background-color: black;
+            color: white;
+        }
+        .main-banner {
+            width: 100%;
+            max-height: 500px;
+        }
+        .player-packs-section {
+            background-color: #0C1130;
+            padding: 20px;
+        }
+        .player-packs-section h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FFD700;
+            text-transform: uppercase;
+        }
+        .player-packs {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .player-packs button {
+            background-color: #33FF57;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        .news-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .news-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #FFD700;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .news-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .news-card {
+            background-color: #0026FF;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: left;
+            width: 230px;
+        }
+        .news-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .news-card h3 {
+            margin: 10px 0 5px 0;
+            font-size: 18px;
+            color: #FFD700;
+        }
+        .news-card p {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="#">Products</a>
+        <a href="#">Solutions</a>
+        <a href="#">Community</a>
+        <a href="#">Resources</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+        <a href="#" class="sign-in">Sign In</a>
+        <a href="#" class="register">Register</a>
+    </div>
+    <div class="header">
+        <h1>EA FC 25</h1>
+        <p>Play the game your way...</p>
+        <div class="buttons">
+            <button class="rent">Rent</button>
+            <button class="buy">Buy</button>
+        </div>
+    </div>
+    <img class="main-banner" src="Images/EA fc.avif" alt="EA FC 25 Banner">
+    <div class="player-packs-section">
+        <h2>FANTASY ICON PACKS</h2>
+        <div class="player-packs">
+            <button>MESSI</button>
+            <button>RONALDO</button>
+            <button>NEYMAR</button>
+            <button>RASHFORD</button>
+            <button>MBAPPE</button>
+            <button>ZIDANE</button>
+            <button>RODRIGO</button>
+        </div>
+    </div>
+    <div class="news-section">
+        <div class="news-title">Latest News</div>
+        <div class="news-container">
+            <div class="news-card">
+                <img src="Images\EA SPORTS FC 25.avif" alt="News Image 1">
+                <h3>EA SPORTS FC 25 Reveal Trailer</h3>
+                <p>Watch the first look at the upcoming game, featuring new gameplay mechanics and an immersive experience.</p>
+            </div>
+            <div class="news-card">
+                <img src="Images\FOOTBALL ULTIMATE TEAM.avif" alt="News Image 2">
+                <h3>New Ultimate Team Features</h3>
+                <p>Discover the latest enhancements to the Ultimate Team experience, including new challenges and rewards.</p>
+            </div>
+            <div class="news-card">
+                <img src="Images\Zinedine Zidane TOTY ICON.avif" alt="News Image 3">
+                <h3>Career Mode Updates</h3>
+                <p>Zizou becomes a Team of the Year all-timer. Add a great to your Football Ultimate Team™ with the Zinedine Zidane Team of the Year 2002 ICON Player Item.</p>
+            </div>
+            <div class="news-card">
+                <img src="Images\EA SPORTS FC 25 I Gameplay.avif" alt="News Image 4">
+                <h3>Gameplay Mechanics Overhaul</h3>
+                <p>Learn about the refined gameplay mechanics designed to make EA SPORTS FC 25 the most realistic football game yet.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
