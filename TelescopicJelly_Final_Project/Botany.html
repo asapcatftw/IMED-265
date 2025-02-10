@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+        
+        <style>
+            #Title, h2{
+              font-family: "Rubik Mono One", serif;
+              text-align: center;
+              color: rgb(217, 217, 217);
+              font-size: 40px;
+              border: 1px rgb(30, 17, 17) solid;
+              border-radius:20px;
+              background-color: rgb(18, 10, 10);
+            }
+            body {
+                background-color: rgb(73, 117, 99);
+            }
+            .Header, .Footer{
+                background-color: aliceblue;
+                text-align: right;
+            }
+            #Title_Description {
+                text-align: center;
+                font-size: 15px;
+
+            }
+            #Title_Imag {
+                max-width: 100%;
+
+            }
+
+            .flex-container {
+                display: flex;
+                justify-content: center;
+                align-items: stretch; /* Makes all children the same height */
+                gap: 15px; /* Ensures equal spacing between items */
+            }
+
+            .Info_Selector, #MainInfo_1, #MainInfo_2, #MainInfo_3{
+                border: 1px rgb(30, 17, 17) solid;
+                border-radius: 20px;
+                color: rgb(217, 217, 217); 
+                background-color: rgb(18, 10, 10);
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            .flex-container > div {
+                flex: 1; /* Makes all divs take up equal space */
+                padding: 20px; /* Adjust padding so content fits well */
+                font-size: 30px;
+                border: 1px rgb(30, 17, 17) solid;
+                border-radius: 20px;
+                color: rgb(217, 217, 217); 
+                background-color:#3C5B3F;
+                display: flex;
+                flex-direction: column;
+                align-items: center; /* Centers content inside */
+                text-align: center;
+            }
+
+            #Info_Imag {
+                width: 100%; /* Makes images take up full width of the container */
+                max-width: 200px; /* Restrict max width */
+                height: auto; /* Maintain aspect ratio */
+                border-radius: 20px;
+            }
+
+            #MainInfo_1, #MainInfo_3  {
+                transform: skew(10deg);
+            }
+
+            #MainInfo_2{
+                transform: skew(-10deg);
+            }
+
+            
+
+
+        </style>
+
+        <title>Botany - Learn More</title>
+    </head>
+    
+    <body>
+        <!-- This controls the header at the top-->
+        <nav class="Header">
+            <div>
+                <a href="#Title">Home</a>
+                <a href="#MainInfo_1" class="link">Importance/History</a>
+                <a href="#MainInfo_2">Genetics</a>
+                <a href="#MainInfo_3">Life Cycle</a>
+            </div>
+        </nav>
+
+          <!-- This controls the title image, words, and button-->
+        <div id="Title">
+            <h1>Botany</h1>
+            <img src="Image_Assets/Title_image.png" alt="Title_Image" id="Title_Imag">
+            <p id="Title_Description">Botany is the study plants in their growth, reproduction, evolution, and diseases. It explores how plants interact with their environment and other living organisms. Modern botany uses advanced tools like genetics and genomics to study how plants grow, reproduce, and adapt, helping improve farming, medicine, environmental care, and resource use. 
+                Click Below to Learn More.</p>
+            <button>Learn More</button>
+        </div>
+
+        <div class="Info_Selector">
+            <h2 style="font-size: 30px;">What Would you Like to Learn First?</h2>
+            <div class="flex-container">
+
+                <div class="Info_1">
+                    <h3>Importance/History</h3>
+                    <p> This is the history</p>
+                    <img src="Image_Assets/ai-generated-a-close-up-of-a-seedling-sprouting-from-fertile-soil-symbolizing-growth-and-renewal-generative-ai-photo.jpeg" alt="Title_Image" id="Info_Imag">
+                    <button>Learn More</button>
+                </div>
+
+                <div class="Info_2">
+                    <h3>Genetics</h3>
+                    <p> This is the Genetics</p>
+                    <img src="Image_Assets/istockphoto-650506912-612x612.jpg" alt="Title_Image" id="Info_Imag">
+                    <button>Learn More</button>
+                </div>
+
+                <div class="Info_3">
+                    <h3>Life Cycle</h3>
+                    <p> This is the Life Cycle</p>
+                    <img src="Image_Assets/2428906fb16d3f849d154a31d051903d.jpg" alt="Title_Image" id="Info_Imag">
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="All_Info">
+            <div>
+
+                <div id="MainInfo_1">
+                    <h3>Importance/History</h3>
+                    <p> This is the history</p>
+                    <img src="Image_Assets/ai-generated-a-close-up-of-a-seedling-sprouting-from-fertile-soil-symbolizing-growth-and-renewal-generative-ai-photo.jpeg" alt="Title_Image" id="Info_Imag">
+
+                </div>
+
+                <div id="MainInfo_2">
+                    <h3>Genetics</h3>
+                    <p> This is the Genetics</p>
+                    <img src="Image_Assets/istockphoto-650506912-612x612.jpg" alt="Title_Image" id="Info_Imag">
+
+                </div>
+
+                <div id="MainInfo_3">
+                    <h3>Life Cycle</h3>
+                    <p> This is the Life Cycle</p>
+                    <img src="Image_Assets/2428906fb16d3f849d154a31d051903d.jpg" alt="Title_Image" id="Info_Imag">
+
+                </div>
+            </div> 
+        </div>
+
+        <footer class="Footer">
+            <div>
+                <a href="#Title">Home</a>
+                <a href="#MainInfo_1" class="link">Importance/History</a>
+                <a href="#MainInfo_2">Genetics</a>
+                <a href="#MainInfo_3">Life Cycle</a>
+            </div>
+        </footer>
+
+    </body>
+</html>
